@@ -19,7 +19,17 @@ export declare class Note extends Number {
 
 //#region function
 
+/**
+ * Multiply a number by 12.
+ * @param number Number to multiply.
+ */
 export declare function octave(number: number): number
+
+/**
+ * Multiply a tempo value into 
+ * @param number Number to multiply.
+ */
+export declare function tempo(number: number): number
 
 //#endregion
 
@@ -34,7 +44,9 @@ export interface SongInfo {
 }
 
 export interface SongSpeed {
-
+    tickRate: number
+    speed: number | number[]
+    virtualTempo: [ numerator: number, denominator: number ]
 }
 
 //#endregion
