@@ -9,8 +9,6 @@ export declare class Song {
  * A musical note.
  */
 export declare class Note extends Number {
-
-
     /**
      * Transpose the note by a given amount.
      * @param amount The amount to transpose by.
@@ -32,10 +30,10 @@ export declare class Note extends Number {
 export declare function octave(number: number): number
 
 /**
- * Multiply a tempo value into 
- * @param number Number to multiply.
+ * Convert a BPM number into a Hz speed.
+ * @param number Tempo to divide.
  */
-export declare function tempo(number: number): number
+export declare function tempoToHz(number: number): number
 
 //#endregion
 
